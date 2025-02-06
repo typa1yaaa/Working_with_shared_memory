@@ -8,5 +8,5 @@
 Содержит функции: 
 1) Сохранения ключа в файл
 ВАЖНО: НАЗВАНИЕ ФАЙЛА ЗАПИСАНО КАК КОНСТАНТА В ФАЙЛЕ helpers.hpp. Его можно поменять по желанию
-```#define FILENAME "shared_memory_key.txt"```
+```#define FILENAME "shared_memory_key.txt"
 
