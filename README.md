@@ -26,19 +26,21 @@
 #### makefile
 Данный файл добавлен для удобства запуска программ отдельно друг от друга.
 Чтобы запустить файл create_shared_memory.cpp введите следующее:
-```ubuntu
+```bash
 make run_create
 ```
+
 Чтобы запустить файл read_delete_shrm.cpp введите следующее:
-```ubuntu
+```bash
 make run_read
 ```
 
 #### Docker file
 Данный докер файл нужен для корректного запуска программ.
-Сначала проверьте, установлен ли у вас docker, потому что он понадобиться для корректной работы. (https://www.docker.com/)
+Сначала проверьте, установлен ли у вас docker, потому что он понадобиться для корректной работы (https://www.docker.com/).
+
 Чтобы запустить обе команды в одном контейнере, введите следующие команды:
-```ubuntu
+```bash
 docker build -t my_program_container .
 docker run --rm my_program_container
 ```
