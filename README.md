@@ -35,7 +35,7 @@ make run_read
 ```
 Рекомендуется запускать read_delete_shrm.cpp после create_shared_memory.cpp.
 
-#### Docker file
+#### Dockerfile
 Данный докер файл нужен для корректного запуска программ.
 Сначала проверьте, установлен ли у вас docker, потому что он понадобится для корректной работы (https://www.docker.com/). 
 
