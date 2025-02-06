@@ -9,5 +9,6 @@
 1) Сохранения ключа в файл 
 ----
 ВАЖНО: НАЗВАНИЕ ФАЙЛА ЗАПИСАНО КАК КОНСТАНТА В ФАЙЛЕ helpers.hpp. Его можно поменять по желанию
-```cpp#define FILENAME "shared_memory_key.txt"
+```cpp
+#define FILENAME "shared_memory_key.txt"```
 ----
