@@ -5,8 +5,6 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 ENV CXXFLAGS="-std=c++17 -O2" 
-ENV CC=gcc
-ENV CXX=g++
 
 COPY . .
 
