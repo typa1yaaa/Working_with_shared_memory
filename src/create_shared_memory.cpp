@@ -2,11 +2,10 @@
 #include "helpers_func.hpp"
 
 int main(){
-    key_t key = ftok("/tmp", 'R'); // Стабильный ключ
-    // key_t key = ftok("/tmp", static_cast<int>(time(nullptr)) % 256); // Уникальный ключ для каждого запуска
+    key_t key = ftok("/create_shared_memory.cpp", 'R'); // Стабильный ключ
     check_error(key, "Key creation error: ");
     
-    int sharedmemory_id = shmget(key, 100, IPC_CREAT | 0666);
+    int sharedmemory_id = shmget(key, 1000, IPC_CREAT | 0666);
     check_error(sharedmemory_id, "Error creating a shared memory segment: ");
     
     char *sharedmemory_ptr = (char*)shmat(sharedmemory_id, NULL, 0);
